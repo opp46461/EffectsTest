@@ -1,0 +1,26 @@
+
+波的水平位置W（第t秒时的位置） = 振幅 x sin（水移动方向 * 位置 * 角频率 + 时间单位 * 相位常数） = 振幅 x sin（水移动方向 * 位置 * 2π/波长 + 时间单位 * 速度 * 2π/波长）
+	= 振幅 x sin（（水移动方向 * 位置 + 时间单位 * 速度） * 2π/波长）
+
+Tint（叠加色）
+WaveFrequency（频率）
+WaveSpeed（速度）
+WaveAmplitude（振幅）
+WaveSmoothing（波平滑度）表面平滑度，表面从0~1的过渡，也就是虚到实的过渡，值越大，表明表面需要过渡的范围越大。由于在下面方程式中最小值为0，所以该值同时表明了是模糊厚度
+UV（纹理位置）
+Time（时间）
+
+Color = Tint * Clamp（Smoothstep（0，WaveSmoothing，
+（1 - UV.y） - （WaveAmplitude * sin（WaveFrequency * UV.x + Time * WaveSpeed） + WaveAmplitude）），0，1）
+	→ 在该方程式中，因为UV的取值范围在【0~1】之间，sine值取值范围为【-1~1】，故而当振幅在【0~0.5】时，波的取值会在【0~1】之间，波谷可见。
+Smoothstep（0，WaveSmoothing，（1 - UV.y） - （WaveAmplitude * sin（WaveFrequency * UV.x + Time * WaveSpeed） + WaveAmplitude））
+
+（1 - UV.y） - （WaveAmplitude * sin（WaveFrequency * UV.x + Time * WaveSpeed） + WaveAmplitude）
+
+（WaveAmplitude * sin（WaveFrequency * UV.x + Time * WaveSpeed） + WaveAmplitude） → 波的水平位置
+WaveAmplitude * （sin（WaveFrequency * UV.x + Time * WaveSpeed） + 1） → WaveAmplitude * （[-1,1] + 1 ） → WaveAmplitude * [0,2] → 当振幅为0.5时，UV范围就满了
+_Amplitude * sin((_WaterDirector * i.uv.x + _Time.x * _Speed) * radians(360) / _Wavelength)
+
+sin（WaveFrequency * UV.x + Time * WaveSpeed） + 1
+sin((_WaterDirector * i.uv.x + _Time.x * _Speed) * radians(360) / _Wavelength)
+
