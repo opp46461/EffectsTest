@@ -356,7 +356,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -778, y: 0}
-  m_SizeDelta: {x: 256, y: 256}
+  m_SizeDelta: {x: 256, y: 254}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &241260157
 MonoBehaviour:
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 856e6fecedf9e024a862fb0a6532d09f, type: 3}
+  m_Texture: {fileID: 2800000, guid: 9f66d35209602684abd220ea68b537fa, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heightPercent: 0.5
   waveHeightParame: 0.1
-  waveWidthParame: 7
+  waveWidthParame: 6.33
   speed: 1
   defaultColor:
     serializedVersion: 2
@@ -564,12 +564,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 856e6fecedf9e024a862fb0a6532d09f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f66d35209602684abd220ea68b537fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.5, y: 2.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -834,12 +834,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 856e6fecedf9e024a862fb0a6532d09f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f66d35209602684abd220ea68b537fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.5, y: 2.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
