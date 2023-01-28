@@ -1,9 +1,7 @@
 ﻿// Upgrade NOTE: upgraded instancing buffer 'Props' to new syntax.
 
-Shader "Custom/Dissolve" 
-{
-	Properties 
-	{
+Shader "Custom/Dissolve_2" {
+	Properties {
 		_Color ("Color", Color) = (1,1,1,1)
 		[HDR]_Emission ("Emission", Color) = (0,0,0,0)
 		_MainTex ("Albedo", 2D) = "white" {}
@@ -24,8 +22,7 @@ Shader "Custom/Dissolve"
 
 		
 	}
-	SubShader 
-	{
+	SubShader {
 		Tags { "Queue"="AlphaTest" "RenderType"="TransparentCutout" "IgnoreProjector"="True" }
 		Cull Off
 
